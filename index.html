@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자취 필수앱 — 브로콜리</title>
+    
+    <!-- SEO 메타 태그 -->
+    <meta name="description" content="돈되는 무료혜택, 보조금・지원금 정보, 우리 동네 커뮤니티・복지정책 알리미 ㅣ 모두 잘 사는 세상 자취필수템, 브로콜리가 만듭니다.">
+    <meta name="keywords" content="계획표, 루틴, 알리미, 투두메이트, 1인가구, 자취생, 독립, 원룸, 혼자살기, 싱글, 독거청년, 지원금, 무료클래스, 두잇, 오늘의집, 씽글벙글, 청년주거, 1인분, 보조금">
+    <meta name="author" content="bold.inc">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph 태그 -->
+    <meta property="og:title" content="자취 필수앱 — 브로콜리">
+    <meta property="og:description" content="돈되는 무료혜택, 보조금・지원금 정보, 우리 동네 커뮤니티・복지정책 알리미 ㅣ 모두 잘 사는 세상 자취필수템, 브로콜리가 만듭니다.">
+    <meta property="og:image" content="https://brocoly.kr/assets/og-image.jpg">
+    <meta property="og:url" content="https://brocoly.kr">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="브로콜리">
+    
+    <!-- Twitter 카드 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="자취 필수앱 — 브로콜리">
+    <meta name="twitter:description" content="돈되는 무료혜택, 보조금・지원금 정보, 우리 동네 커뮤니티・복지정책 알리미 ㅣ 모두 잘 사는 세상 자취필수템, 브로콜리가 만듭니다.">
+    <meta name="twitter:image" content="https://brocoly.kr/assets/og-image.jpg">
+    
+    <!-- 캐노니컬 태그 -->
+    <link rel="canonical" href="https://brocoly.kr">
+    
+    <!-- 파비콘 -->
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 스크롤에 따라 움직이는 얼굴 이미지 -->
+    <div class="floating-face" id="floatingFace">
+        <img src="assets/face1.png" alt="얼굴 이미지">
+    </div>
+
+    <!-- 메뉴바 -->
+    <nav class="menu-bar">
+        <div class="container">
+            <a href="#" id="logoLink" class="logo-link">
+                <img src="assets/logo.png" alt="브로콜리 로고" class="logo">
+            </a>
+            <div class="app-links">
+                <a href="https://apps.apple.com/us/app/brocoly/id6504699457" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/apple.png" alt="App Store" class="app-store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.leo2777.brocoly" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/google.png" alt="Google Play" class="google-play">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로섹션 -->
+    <section class="hero-section">
+        <div class="container">
+            <h1><span class="line1">어려운 혼자살기,</span><br><span class="line2">브로콜리로 완전해결</span></h1>
+            
+            <div class="social-area">
+                <button class="btn" id="shareButton">친구에게 알리기</button>
+                <div class="profiles-group">
+                    <div class="profiles">
+                        <img src="assets/profile1.png" alt="프로필1" class="profile">
+                        <img src="assets/profile2.png" alt="프로필2" class="profile">
+                        <img src="assets/profile3.png" alt="프로필3" class="profile">
+                    </div>
+                    <h4>+<span id="userCount">740</span>명 사용중</h4>
+                </div>
+            </div>
+            
+            <div class="image-area">
+                <img src="assets/hero.png" alt="브로콜리 앱 화면" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- 링크 공유 팝업 -->
+    <div class="share-popup" id="sharePopup">
+        <div class="share-popup-content">
+            <div class="share-popup-body">
+                <img src="assets/popup.png" alt="브로콜리 팝업 이미지" class="popup-image">
+                <div class="share-link-container">
+                    <div id="shareLink">brocoly.kr</div>
+                </div>
+                <button class="btn" id="copyLinkButton"><h4>링크 복사하기</h4></button>
+                <button class="close-button" id="closePopup">
+                    <img src="assets/x-circle.png" alt="닫기" class="close-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 콘텐츠 섹션 -->
+    <section class="content-section" id="section1">
+        <div class="container">
+            <h2>흩어져있는 1인가구 정보<br>한곳에서 확인</h2>
+            
+            <h3>지자체・관공서 홈페이지는 물론 블로그와 인스타그램등 모든 정보를 브로콜리에 모았어요.</h3>
+            
+            <div class="card-gallery">
+                <div class="card-gallery-container">
+                    <!-- 원본 카드 -->
+                    <img src="assets/card1.png" alt="카드1" class="card">
+                    <img src="assets/card2.png" alt="카드2" class="card">
+                    <img src="assets/card3.png" alt="카드3" class="card">
+                    <img src="assets/card4.png" alt="카드4" class="card">
+                    <img src="assets/card5.png" alt="카드5" class="card">
+                    <img src="assets/card6.png" alt="카드6" class="card">
+                    
+                    <!-- 복제된 카드 (무한 스크롤 효과를 위해) -->
+                    <img src="assets/card1.png" alt="카드1" class="card">
+                    <img src="assets/card2.png" alt="카드2" class="card">
+                    <img src="assets/card3.png" alt="카드3" class="card">
+                    <img src="assets/card4.png" alt="카드4" class="card">
+                    <img src="assets/card5.png" alt="카드5" class="card">
+                    <img src="assets/card6.png" alt="카드6" class="card">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section class="feature-section" id="section2">
+        <div class="container">
+            <h2>보기쉽고 알기쉬운<br>브로콜리 맞춤 정보</h2>
+            
+            <div class="menu-tabs">
+                <button class="btn_menu active" data-tab="tab1">내주변</button>
+                <button class="btn_menu" data-tab="tab2">관심정보를</button>
+                <button class="btn_menu" data-tab="tab3">요약해서</button>
+                <button class="btn_menu" data-tab="tab4">필요한것만</button>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    <h3>거주지역/업무지역을 입력하면, 설정한 지역의 정보만 알려드려요.</h3>
+                    <div class="feature-image">
+                        <img src="assets/function2.png" alt="내 주변 기능" class="function-image">
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <h3>카테고리 알람을 받을 수 있어요. 관심 카테고리의 새로운 혜택을 놓치지 마세요.</h3>
+                    <div class="feature-image">
+                        <img src="assets/function3.png" alt="관심정보 기능" class="function-image">
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <h3>이것저것 다 볼 필요없이 필요한것만 딱딱! 3줄요약부터 확인하세요</h3>
+                    <div class="feature-image">
+                        <img src="assets/function4.png" alt="요약 기능" class="function-image">
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <h3>나이와 성별에 딱맞게 필요한 정보만 알려드려요</h3>
+                    <div class="feature-image">
+                        <img src="assets/function1.png" alt="필요한 것만 기능" class="function-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 플랜 섹션 -->
+    <section class="plan-section" id="section3">
+        <div class="container">
+            <h2>혼자 살때 더 중요한<br>규칙적인 생활습관 만들기</h2>
+            
+            <h3>루틴을 쉽게 만들고, 체계적인 통계를 받으세요</h3>
+            
+            <div class="plan-image">
+                <img src="assets/ui.png" alt="루틴 관리 기능" class="plan-ui-image">
+                <div class="plan-background"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 파티 섹션 -->
+    <!-- <section class="party-section" id="section4">
+        <div class="container">
+            <h2>매일 열리는<br>브로들의 생일파티</h2>
+            
+            <h3>익명 생일파티에 참여하세요.<br>브로들을 축하 한 만큼 내 생일날이 왁자지껄해져요!</h3>
+            
+            <div class="profile-gallery" id="profileGallery">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- 푸터 섹션 -->
+    <section class="footer-section">
+        <div class="container">
+            <h1>모두 잘 사는 세상<br>자취필수템, 브로콜리가 만듭니다.</h1>
+            
+            <div class="app-links">
+                <a href="https://apps.apple.com/us/app/brocoly/id6504699457" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/apple.png" alt="App Store" class="app-store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.leo2777.brocoly" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/google.png" alt="Google Play" class="google-play">
+                </a>
+            </div>
+            
+            <h4>ⓒbold.inc ㅣ cs.brocoly@gmail.com</h4>
+        </div>
+    </section>
+
+    <!-- 구조화된 데이터 (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "브로콜리",
+      "description": "돈되는 무료혜택, 보조금・지원금 정보, 우리 동네 커뮤니티・복지정책 알리미 ㅣ 모두 잘 사는 세상 자취필수템, 브로콜리가 만듭니다.",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "740"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "bold.inc",
+        "email": "cs.brocoly@gmail.com"
+      }
+    }
+    </script>
+
+    <!-- 로컬 비즈니스 정보 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "브로콜리",
+      "url": "https://brocoly.kr",
+      "logo": "https://brocoly.kr/assets/logo.png",
+      "sameAs": [
+        "https://instagram.com/brocoly.official",
+        "https://facebook.com/brocolyofficial"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "cs.brocoly@gmail.com",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+
+    <!-- 웹사이트 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "자취 필수앱 — 브로콜리",
+      "url": "https://brocoly.kr",
+      "description": "돈되는 무료혜택, 보조금・지원금 정보, 우리 동네 커뮤니티・복지정책 알리미 ㅣ 모두 잘 사는 세상 자취필수템, 브로콜리가 만듭니다.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://brocoly.kr/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "mainContentOfPage": {
+          "@type": "WebPageElement",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", "h2", "h3"]
+          }
+        }
+      }
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html> 

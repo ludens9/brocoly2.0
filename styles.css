@@ -1,0 +1,1001 @@
+/* 전체 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* 타이포그래피 */
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #181B19;
+    line-height: 130%;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #181B19;
+    line-height: 130%;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #181B19;
+    line-height: 140%;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #181B19;
+    line-height: 130%;
+    opacity: 0.5;
+}
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #181B19;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_menu {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgba(24, 27, 25, 0.3);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    margin: 0 2px;
+    opacity: 0.3;
+    -webkit-tap-highlight-color: rgba(46, 178, 99, 0.2);
+    touch-action: manipulation;
+    transition: background-color 0.1s ease, color 0.1s ease, opacity 0.1s ease;
+}
+
+.btn_menu.active {
+    background-color: #C1FFB9;
+    color: #2EB263;
+    opacity: 1;
+}
+
+.btn_menu:active {
+    background-color: #C1FFB9;
+    color: #2EB263;
+    opacity: 1;
+    transition: none;
+}
+
+/* 메뉴바 */
+.menu-bar {
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.menu-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 44px;
+}
+
+.logo-link {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+.app-links {
+    display: flex;
+    gap: 10px;
+}
+
+.app-links a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.app-links a:hover {
+    transform: scale(1.05);
+}
+
+.app-store, .google-play {
+    height: 38px;
+    cursor: pointer;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    min-height: min-content;
+}
+
+.hero-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(45deg, rgba(233, 249, 255, 0.7), rgba(243, 255, 243, 0.7));
+    z-index: -1;
+}
+
+.hero-section:after {
+    content: "";
+    position: absolute;
+    top: 600px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 600px);
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+.hero-section .container {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.social-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.social-area .btn {
+    margin-right: 10px;
+}
+
+.profiles-group {
+    display: flex;
+    align-items: center;
+}
+
+.profiles {
+    display: flex;
+    margin-right: 4px;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -4px;
+}
+
+.image-area {
+    margin-top: 20px;
+}
+
+.hero-image {
+    width: 300px;
+    height: 650px;
+    border-radius: 30px;
+    box-shadow: 0 5px 40px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* 콘텐츠 섹션 */
+.content-section {
+    padding-top: 200px;
+    width: 100%;
+}
+
+.content-section .container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content-section h2,
+.content-section h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-gallery {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+@keyframes scrollCards {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 6)); /* 카드 6개 너비만큼 이동 (원본 카드 갯수) */
+    }
+}
+
+.card-gallery-container {
+    display: flex;
+    gap: 10px;
+    animation: scrollCards 60s linear infinite;
+    width: max-content;
+    align-items: flex-start;
+}
+
+.card {
+    flex-shrink: 0;
+    width: 335px;
+    height: auto;
+    border-radius: 20px;
+    vertical-align: top;
+    object-fit: contain;
+}
+
+/* 기능 섹션 */
+.feature-section {
+    padding-top: 200px;
+    width: 100%;
+}
+
+.feature-section h2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-tabs {
+    margin: 20px 0;
+}
+
+.tab-content {
+    margin: 20px 0;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-content h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 기능 섹션 이미지 애니메이션 */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.function-image {
+    width: 440px;
+    height: 440px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+/* 플랜 섹션 */
+.plan-section {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+    position: relative;
+}
+
+.plan-section h2 {
+    color: #181B19;
+    margin-bottom: 20px;
+}
+
+.plan-section h3 {
+    margin-bottom: 40px;
+}
+
+.plan-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    min-height: 750px;
+}
+
+.plan-ui-image {
+    width: 570px;
+    height: 730px;
+    object-fit: contain;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plan-background {
+    position: absolute;
+    width: 80%;
+    height: 600px;
+    background: linear-gradient(45deg, rgba(233, 249, 255, 0.7), rgba(243, 255, 243, 0.7));
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* 파티 섹션 */
+.party-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(233, 249, 255, 0.7), rgba(243, 255, 243, 0.7));
+    overflow-x: hidden;
+}
+
+.party-section h2,
+.party-section h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-gallery {
+    margin: 20px 0;
+    position: relative;
+    min-height: 400px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-row {
+    display: none;
+}
+
+.profile-bubble {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 프로필 이미지 스타일 */
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* 푸터 섹션 */
+.footer-section {
+    padding-top: 200px;
+    padding-bottom: 300px;
+    width: 100%;
+}
+
+.footer-section h1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-section .app-links {
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* 섹션 간격 */
+section {
+    margin-bottom: 200px;
+}
+
+/* 히어로 섹션 버튼 스타일 */
+.hero-section .btn {
+    background-color: #C1FFB9;
+    color: #2EB263;
+}
+
+/* 애니메이션 스타일 */
+@keyframes ringBell {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(5deg); }
+    20% { transform: rotate(-5deg); }
+    30% { transform: rotate(4deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(2deg); }
+    60% { transform: rotate(-2deg); }
+    70% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section .btn {
+    animation: ringBell 0.4s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+    animation-play-state: running;
+}
+
+.hero-section h1 {
+    opacity: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section h1 .line1 {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.hero-section h1 .line2 {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.count-animation {
+    display: inline;
+}
+
+/* 스크롤에 따라 움직이는 얼굴 이미지 스타일 */
+.floating-face {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translate(-50%, -50%);
+}
+
+/* face~.png 둥둥 애니메이션 */
+@keyframes floatingFaceAnimation {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+}
+
+.floating-face img {
+    height: 200px;
+    width: auto;
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: block;
+    transform-origin: center center;
+    object-fit: contain;
+    animation: floatingFaceAnimation 4s ease-in-out infinite;
+    filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.2));
+}
+
+/* 링크 공유 팝업 스타일 */
+.share-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    /* 애니메이션 제거 */
+}
+
+.share-popup.active {
+    opacity: 1;
+    visibility: visible;
+    /* 애니메이션 제거 */
+}
+
+.share-popup-content {
+    background-color: white;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 360px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    /* transform 속성 제거 */
+    opacity: 1;
+}
+
+.share-popup-body {
+    padding: 60px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-image {
+    height: 140px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.share-link-container {
+    width: 100%;
+    margin: 10px 0 5px 0;
+}
+
+#shareLink {
+    width: 100%;
+    padding: 20px;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #181B19;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f9f9f9;
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: none;
+}
+
+#shareLink:focus {
+    outline: none;
+}
+
+.share-popup-body .btn {
+    margin: 5px 0 10px 0;
+    width: 100%;
+    background-color: #C1FFB9;
+    color: #2EB263;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+}
+
+.share-popup-body .btn h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2EB263;
+    opacity: 1;
+}
+
+.share-popup-body .btn.copied h4 {
+    opacity: 0.3;
+}
+
+.share-popup-body .btn.copied {
+    opacity: 0.3;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* 미디어 쿼리 - 모바일 환경에서의 폰트 사이즈 조정 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        width: 90%;
+        line-height: 140%;
+    }
+
+    h2 {
+        font-size: 30px;
+        width: 90%;
+        line-height: 150%;
+    }
+
+    h3 {
+        font-size: 16px;
+        width: 90%;
+        line-height: 160%;
+    }
+
+    h4 {
+        font-size: 13px;
+        line-height: 130%;
+    }
+
+    .btn, .btn_menu {
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+    
+    .menu-bar {
+        padding: 16px;
+    }
+    
+    .logo {
+        height: 36px;
+    }
+    
+    .app-store, .google-play {
+        height: 30px;
+    }
+    
+    /* 히어로 섹션 모바일 대응 */
+    .hero-section {
+        height: auto;
+        min-height: min-content;
+        padding-bottom: 40px;
+        overflow: visible;
+    }
+    
+    .hero-section:before {
+        height: 600px;
+        background: linear-gradient(45deg, rgba(233, 249, 255, 0.7), rgba(243, 255, 243, 0.7));
+    }
+    
+    .hero-section:after {
+        top: 600px;
+        height: calc(100% - 600px);
+    }
+    
+    .hero-section .container {
+        margin-top: 20vh;
+        overflow: visible;
+        padding-bottom: 30px;
+    }
+    
+    .hero-section h1 {
+        font-size: 40px;
+        width: 90%;
+        margin-bottom: 2vh;
+    }
+    
+    .social-area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 8vh 0;
+    }
+    
+    .social-area .btn {
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        order: 2;
+    }
+    
+    .profiles-group {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 2vh;
+        order: 1;
+    }
+    
+    .profiles {
+        display: flex;
+        margin-right: 4px;
+    }
+    
+    .profile {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .image-area {
+        margin-top: 0;
+        overflow: visible;
+    }
+    
+    .hero-image {
+        width: 280px;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: 0 5px 40px rgba(0,0,0,0.05);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    /* 콘텐츠 섹션 모바일 대응 */
+    .content-section {
+        padding-top: 150px;
+        overflow-x: hidden;
+    }
+    
+    .content-section h2,
+    .content-section h3,
+    .feature-section h2,
+    .tab-content h3,
+    .party-section h2,
+    .party-section h3,
+    .footer-section h1 {
+        width: 90%;
+    }
+    
+    .card {
+        width: 250px;
+        max-width: 70vw;
+        border-radius: 0;
+    }
+    
+    .card-gallery-container {
+        width: max-content;
+        max-width: none;
+    }
+    
+    @keyframes scrollCards {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-70vw * 6));
+        }
+    }
+    
+    /* 기능 섹션 모바일 대응 */
+    .feature-section {
+        padding-top: 150px;
+        overflow-x: hidden;
+    }
+    
+    .menu-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 4px;
+        margin: 20px auto;
+        width: 90%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .btn_menu {
+        padding: 10px 16px;
+        margin: 0;
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: none;
+        min-width: auto;
+        white-space: nowrap;
+    }
+    
+    .btn_menu:active {
+        background-color: #C1FFB9;
+        color: #2EB263;
+        opacity: 1;
+        transition: none;
+    }
+    
+    .function-image {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+        max-height: 280px;
+    }
+    
+    /* 기능 탭 관련 컨테이너 제한 */
+    .tab-pane {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .feature-image {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    /* 푸터 섹션 모바일 대응 */
+    .footer-section {
+        padding-top: 150px;
+        padding-bottom: 225px;
+    }
+    
+    /* 모바일에서 파티 섹션 조정 */
+    .party-section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background: linear-gradient(45deg, rgba(233, 249, 255, 0.7), rgba(243, 255, 243, 0.7));
+    }
+    
+    .profile-gallery {
+        min-height: 300px;
+    }
+    
+    /* 모바일에서 섹션 간격 조정 */
+    section {
+        margin-bottom: 120px;
+        overflow-x: hidden;
+    }
+    
+    /* 모바일에서 floating-face 이미지 크기 조정 */
+    .floating-face img {
+        height: 120px !important;
+        width: auto !important;
+    }
+    
+    /* 모바일에서 컨테이너 패딩 조정 */
+    .container {
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* 모바일에서 공유 팝업 조정 */
+    .share-popup-content {
+        width: 80%;
+        max-width: 300px;
+        border-radius: 25px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        /* transform 제거 */
+        opacity: 1;
+    }
+    
+    .share-popup-body {
+        padding: 40px 20px 25px 20px;
+    }
+    
+    .popup-image {
+        height: 110px;
+        margin-bottom: 20px;
+    }
+    
+    #shareLink {
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 80px;
+    }
+    
+    .share-popup-body .btn {
+        padding: 12px 15px;
+        margin: 4px 0 8px 0;
+    }
+    
+    .share-popup-body .btn h4 {
+        font-size: 14px;
+    }
+    
+    .close-button {
+        margin-top: 8px;
+        padding: 8px;
+    }
+    
+    .close-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* 모바일에서 플랜 섹션 조정 */
+    .plan-section {
+        padding: 70px 0;
+    }
+    
+    .plan-image {
+        min-height: 460px;
+    }
+
+    .plan-ui-image {
+        width: 335px;
+        height: auto;
+        border-radius: 0;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .plan-background {
+        height: 360px;
+        border-radius: 20px;
+        width: 90%;
+    }
+}
+
