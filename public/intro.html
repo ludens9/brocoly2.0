@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>브로콜리 인트로</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 50px 0;
+      background: #fff;
+      width: 100vw;
+      min-height: 100vh;
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', Arial, sans-serif;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .container {
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    .hero {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 30px;
+    }
+    .hero img {
+      width: 220px;
+      height: 200px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      animation: floatY 2.2s ease-in-out infinite;
+    }
+    @keyframes floatY {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+      100% { transform: translateY(0); }
+    }
+    .content-section {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .intro-text {
+      text-align: center;
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: #A6A6A6;
+      line-height: 180%;
+      margin-bottom: 10px;
+      margin-top: 0;
+      width: 100%;
+      word-break: keep-all;
+    }
+    .intro-image {
+      width: 100%;
+      max-width: 375px;
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .intro-image:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <img src="/assets/intro_hero.png" alt="브로콜리 인트로 히어로" />
+      <p class="intro-text">
+        브로들 쏴리질러!<br />
+        자취생 필수앱, 브로콜리가 드디어 업데이트 되었어요.<br />
+        어떤게 편리해졌고 좋아졌는지 함께 알아봐요.
+      </p>
+    </section>
+    <section class="content-section">
+      <img class="intro-image" src="/assets/intro_card1.png" alt="인트로 카드1" />
+      <img class="intro-image" src="/assets/intro_card2.png" alt="인트로 카드2" />
+      <img class="intro-image" src="/assets/intro_card3.png" alt="인트로 카드3" />
+      <img class="intro-image" src="/assets/intro_card4.png" alt="인트로 카드4" />
+    </section>
+  </div>
+</body>
+</html> 
