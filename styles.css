@@ -997,5 +997,16 @@ section {
         border-radius: 20px;
         width: 90%;
     }
+
+    .logo-link,
+    .app-links a,
+    .hero-image {
+        transition: none !important;
+        transform: none !important;
+    }
+    .logo-link:hover,
+    .app-links a:hover {
+        transform: none !important;
+    }
 }
 
