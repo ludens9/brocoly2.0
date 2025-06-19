@@ -69,17 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function(e) {
             handleTabActivation(this);
         });
-        
-        // 터치 시작 이벤트 처리 (모바일용)
-        button.addEventListener('touchstart', function(e) {
-            // 터치 시작할 때 즉시 활성화 효과 주기
-            this.classList.add('active');
-        });
-        
-        // 터치 종료 이벤트 처리 (모바일용)
-        button.addEventListener('touchend', function(e) {
-            handleTabActivation(this);
-        });
     });
     
     // 탭 활성화 함수
@@ -103,38 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // 히어로 섹션 애니메이션 구현
-    
-    // 1. 친구에게 알리기 버튼 애니메이션
-    
-    // 초기 애니메이션 설정
-    shareButton.style.animationDelay = '0s';
-    shareButton.style.animationIterationCount = '1';
-    shareButton.style.animationPlayState = 'paused';
-    
-    // 2번 연속 흔들리고 5초 쉬는 패턴으로 애니메이션 설정
-    function ringBellTwice() {
-        // 첫 번째 흔들림
-        shareButton.style.animationName = 'none';
-        setTimeout(() => {
-            shareButton.style.animationName = 'ringBell';
-            shareButton.style.animationPlayState = 'running';
-            
-            // 첫 번째 흔들림이 끝나면 두 번째 흔들림 시작
-            setTimeout(() => {
-                shareButton.style.animationName = 'none';
-                setTimeout(() => {
-                    shareButton.style.animationName = 'ringBell';
-                    shareButton.style.animationPlayState = 'running';
-                }, 10);
-            }, 500); // 첫 번째 흔들림 후 바로 두 번째 흔들림
-        }, 10);
-    }
-    
-    // 초기 애니메이션 시작
-    ringBellTwice();
-    
-    // 5초마다 애니메이션 반복
-    setInterval(ringBellTwice, 5000);
     
     // 2. 타이틀 애니메이션
     const titleLine1 = document.querySelector('.hero-section h1 .line1');
