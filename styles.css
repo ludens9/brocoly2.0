@@ -130,11 +130,11 @@ h4 {
 .logo-link {
     display: inline-block;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    /* transition: transform 0.2s ease; */
 }
 
 .logo-link:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .app-links {
@@ -144,11 +144,11 @@ h4 {
 
 .app-links a {
     display: inline-block;
-    transition: transform 0.2s ease;
+    /* transition: transform 0.2s ease; */
 }
 
 .app-links a:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .app-store, .google-play {
@@ -505,7 +505,7 @@ section {
 .hero-section .btn {
     animation: ringBell 0.4s ease-in-out;
     animation-iteration-count: infinite;
-    animation-delay: 20s;
+    animation-delay: 0s;
     animation-play-state: running;
 }
 
